@@ -3,7 +3,7 @@ package com.company;
 //Max Consecutive Ones
 public class findMaxConsecutiveOnes {
 
-    public static int findMaxConsecutiveOnesA(int[] nums) {
+    public int findMaxConsecutiveOnesA(int[] nums) {
         int longest = 0;
         int current = 0;
         for(int each: nums){
@@ -20,7 +20,8 @@ public class findMaxConsecutiveOnes {
     }
 
     public static void main(String[] args) {
+        findMaxConsecutiveOnes test = new findMaxConsecutiveOnes();
         int[] input = {1,1,0,1,1,1,1};
-        System.out.println(findMaxConsecutiveOnesA(input));
+        System.out.println(test.findMaxConsecutiveOnesA(input));
     }
 }
